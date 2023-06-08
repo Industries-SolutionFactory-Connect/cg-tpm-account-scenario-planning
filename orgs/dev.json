@@ -1,6 +1,6 @@
 {
   "orgName": "cg-tpm-account-scenario-planning - Dev Org",
-  "edition": "Developer",
+   "template": "0TTB0000001q5AW",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
