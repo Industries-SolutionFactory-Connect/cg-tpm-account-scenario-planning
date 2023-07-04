@@ -1,0 +1,42 @@
+{
+    "product": {
+        "title": {
+            "message": "Account Scenario Planning",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "Multiple versions of the plan to get to the right decisions.",
+            "description": "tagline of product"
+        },
+        "description": {
+            "message": "Account Scenario Planning supports the customer business planning process by supporting multiple scenarios for an account and year by varying price conditions, volumes, contracts, promotions and spends.\r\n\r\n**Base Plan** - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Post Install Steps**:<br> \r\n1. Follow the [document](https://salesforce.quip.com/o3XZAx1WJpA3) to manually enable ASP for your Sales Org.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
+            "description": "shown on product detail page (markdown)"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Base Plan",
+            "description": "title of installation plan"
+        },
+        "preflight_message": {
+            "message": "This will install data for Account Scenario Planning module in your org",
+            "description": "shown before user starts installation (markdown)"
+        },
+        "post_install_message": {
+            "message": "Thanks for installing Account Scenario Planning Module.Please visit <mention> for any questions about Account Scenario Planning",
+            "description": "shown after successful installation (markdown)"
+        }
+    },
+    "checks": {
+        "You need LightningTradePromMgmtPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need LightningTradePromMgmtPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        }
+    },
+    "steps": {
+        "Load Business Data": {
+            "message": "Load Business Data",
+            "description": "title of installation step"
+        }
+    }
+}
