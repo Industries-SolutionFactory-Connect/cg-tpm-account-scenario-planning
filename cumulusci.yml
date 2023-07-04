@@ -6,6 +6,7 @@ project:
         api_version: '58.0'
     git:
         default_branch: 'main'
+        repo_url: https://github.com/Industries-SolutionFactory-Connect/cg-tpm-account-scenario-planning
         prefix_feature: 'feature/'
         prefix_beta: 'beta/'
         prefix_release: 'release/'
@@ -26,3 +27,30 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+flows:
+    asp_data_setup:
+        steps:
+             1:
+                task: load_dataset
+                options: 
+                    mapping:  datasets/default/default.mapping.yml
+                    sql_path: datasets/default/default.dataset.sql
+                ui_options: 
+                    name: Load Business Data
+plans:
+  install:
+    slug: install
+    title: Base Plan 
+    tier: primary
+    is_listed: True
+    preflight_message: "This will install data for Account Scenario Planning module in your org"
+    post_install_message: "Thanks for installing Account Scenario Planning Module.Please visit <mention> for any questions about Account Scenario Planning"
+    checks:
+      - when: "'LightningTradePromMgmtPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need LightningTradePromMgmtPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+    steps:
+       1:
+        flow: asp_data_setup
+
+

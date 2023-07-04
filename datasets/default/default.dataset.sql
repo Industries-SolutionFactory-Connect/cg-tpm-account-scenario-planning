@@ -32,7 +32,6 @@ CREATE TABLE "cgcloud__Sales_Organization__c" (
 	"cgcloud__Description_Language_4__c" VARCHAR(255), 
 	"cgcloud__Distance_Unit__c" VARCHAR(255), 
 	"cgcloud__Email__c" VARCHAR(255), 
-	"cgcloud__Enable_Account_Plan_Scenarios__c" VARCHAR(255), 
 	"cgcloud__Enable_Acc_Cat_WDS_Profile__c" VARCHAR(255), 
 	"cgcloud__Enable_Account_Set_Search_in_TPC__c" VARCHAR(255), 
 	"cgcloud__Enable_Payment_Overwrite__c" VARCHAR(255), 
@@ -79,8 +78,7 @@ CREATE TABLE "cgcloud__Sales_Organization__c" (
 	"cgcloud__Week_Day_Share_Profile__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "cgcloud__Sales_Organization__c" VALUES(1,'','global','','True','1','','','','','','','USD','','','0176D3','','','0001','','','','km','','True','False','True','True','False','False','True','False','False','','1','1','False','False','','en','','','','','0001','','','','','Independent_Anchors','Brand','','0001','','','','','Hyperforce_AWS','','startdate','','l','','','kg','','','','');
-INSERT INTO "cgcloud__Sales_Organization__c" VALUES(2,'','global','','True','1','','','','','','','USD','','','0176D3','','','English','','','','km','','False','False','True','True','False','False','True','False','False','','2','1','False','False','','en','','','','','0002','','','','','Independent_Anchors','Brand','','0002','','','','','Hyperforce_AWS','','startdate','','l','','','kg','','','','');
+INSERT INTO "cgcloud__Sales_Organization__c" VALUES(1,'','global','','True','1','','','','','','','USD','','','0176D3','','','English','','','','km','','False','True','True','False','False','True','False','False','','2','1','False','False','','en','','','','','0002','','','','','Independent_Anchors','Brand','','0002','','','','','Hyperforce_AWS','','startdate','','l','','','kg','','','','');
 CREATE TABLE "cgcloud__Week_Day_Share_Profile__c" (
 	id INTEGER NOT NULL, 
 	PRIMARY KEY (id)

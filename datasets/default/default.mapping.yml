@@ -41,7 +41,6 @@ Insert cgcloud__Sales_Organization__c:
   - cgcloud__Description_Language_4__c
   - cgcloud__Distance_Unit__c
   - cgcloud__Email__c
-  - cgcloud__Enable_Account_Plan_Scenarios__c
   - cgcloud__Enable_Acc_Cat_WDS_Profile__c
   - cgcloud__Enable_Account_Set_Search_in_TPC__c
   - cgcloud__Enable_Payment_Overwrite__c
@@ -93,3 +92,4 @@ Insert cgcloud__Sales_Organization__c:
     cgcloud__Week_Day_Share_Profile__c:
       table: cgcloud__Week_Day_Share_Profile__c
       key_field: cgcloud__Week_Day_Share_Profile__c
+  soql_filter: "Name = '0002' "
